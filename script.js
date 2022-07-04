@@ -10,13 +10,22 @@ function calcAge(e){
 
     let birthDate = new Date(birthday);
 
-    let currentDate = Date.now();
+    let currentDate = new Date();
+
 
     console.log( birthDate);
     console.log(currentDate);
 
-    let difference = currentDate - Number(birthDate);
-    console.log(difference);
-    let output = new Date(difference);
-    console.log(output);
+
+    let yearDiff = currentDate.getFullYear() - birthDate.getFullYear();
+    console.log(yearDiff);
+    let monthDiff = currentDate.getMonth() - birthDate.getMonth();
+    console.log(monthDiff);
+    let dayDiff = currentDate.getDate() - birthDate.getDate();
+    console.log(dayDiff);
+    let hourDiff = currentDate.getHours() - birthDate.getHours();
+    console.log(hourDiff);
+
+    // let output = new Date(difference);
+    // console.log(output);
 }
