@@ -1,57 +1,69 @@
 /* css reset  */
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    background-image: url('img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#9334ca ;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #9334ca;
+  font-size: 15px;
 }
 
-.container{
-    margin:10% auto;
-    padding: 20px 40px;
-    width: 300px;
-    height:270px;
-    background-color: #eeeeeecb;
-    border-radius: 5px;
+.container {
+  margin: 10% auto;
+  padding: 20px 25px;
+  width: 310px;
+  height: 270px;
+  background-color: #eeeeee;
+  border-radius: 5px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-form *{
- margin-bottom: 10px;
+.container div {
+    display:flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
-input[type="date"]{
-    font-size: 20px;
-    padding:  5px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 1px solid #fff;
-    text-transform: uppercase;
+h1{
+    font-size: 23px;
 }
-button{
-    background-color: #9334ca;
-    color: #fff;
-    padding: 8px 15px;
-    font-size: 15px;
-   border: none;
-   border-radius: 5%;
-   cursor: pointer;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-button:hover{
-    background-color: #fff ;
-    color: #9334ca;
+form * {
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+button {
+  background-color: #9334ca;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #fff;
+  color: #9334ca;
+  transition: ease-in-out;
+  transition-duration:300ms;
 }
