@@ -14,10 +14,12 @@ body {
   background-size: cover;
   color: #9334ca;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  margin: 10% auto;
+  margin: 10% 30px;
   padding: 20px 25px;
   width: 310px;
   height: 270px;

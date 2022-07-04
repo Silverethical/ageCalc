@@ -26,6 +26,31 @@ function calcAge(e){
     let hourDiff = currentDate.getHours() - birthDate.getHours();
     console.log(hourDiff);
 
-    // let output = new Date(difference);
-    // console.log(output);
+    let difference = Number(currentDate) - Number(birthDate);
+    let output = new Date(difference);
+    console.log(output);
+
+
+    let totalDays = difference / (1000*60*60*24);
+    console.log(totalDays);
+
+    let totalMonths = totalDays/ 30;
+    console.log(totalMonths);
+
+    let totalYears = totalMonths /12;
+    console.log(totalYears);
+
+
+
+
+
+
+
+    let result = document.createElement("div");
+    result.classList.add("container");
+    result.setAttribute('id','resultContainer')
+    document.querySelector("body").appendChild(result);
+
+    result.append(yearDiff +" years "+ monthDiff +" months " + dayDiff +" days ")
+
 }
