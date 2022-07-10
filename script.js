@@ -1,4 +1,7 @@
+"use strict"
+
 let calculateBtn = document.getElementById("submit");
+let birthday = document.getElementById("date").value;
 
 calculateBtn.addEventListener("click",calcAge);
 
@@ -6,7 +9,7 @@ function calcAge(e){
 
     e.preventDefault();
 
-    let birthday = document.getElementById("date").value;
+    
 
     let birthDate = new Date(birthday);
 
