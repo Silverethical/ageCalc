@@ -15,16 +15,19 @@ body {
   color: #9334ca;
   font-size: 18px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-  margin: 10% 30px;
+  margin: 3% 30px 1%;
   padding: 20px 25px;
-  width: 310px;
-  height: 270px;
+  
+  width:500px;
+  height:max-content;
   background-color: #eeeeee;
   border-radius: 5px;
+  flex: 1 0 auto;
 }
 .container div {
     display:flex;
@@ -40,6 +43,7 @@ form {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding: 15px;
 }
 form * {
   margin-bottom: 10px;
@@ -47,7 +51,7 @@ form * {
 
 input[type="date"] {
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
   border: none;
   outline: none;
   background-color: transparent;
